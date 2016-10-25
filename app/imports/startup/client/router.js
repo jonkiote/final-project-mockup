@@ -29,6 +29,41 @@ FlowRouter.route('/stuff/:_id', {
   },
 });
 
+FlowRouter.route('/career', {
+  name: 'Careers_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Careers_Page' });
+  },
+});
+
+FlowRouter.route('/calendar', {
+  name: 'Calendar_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Calendar_Page' });
+  },
+});
+
+FlowRouter.route('/about-us', {
+  name: 'About_Us_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'About_Us_Page' });
+  },
+});
+
+FlowRouter.route('/my-profile', {
+  name: 'My_Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'My_Profile_Page' });
+  },
+});
+
+FlowRouter.route('/leaderboard', {
+  name: 'Leaderboard_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Leaderboard_Page' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
