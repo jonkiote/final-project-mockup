@@ -64,6 +64,13 @@ FlowRouter.route('/leaderboard', {
   },
 });
 
+FlowRouter.route('/public-chat', {
+  name: 'Public_Chat_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Public_Chat_Page' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });

@@ -1,14 +1,25 @@
 <template name="Header">
-  <div class="ui top fixed borderless inverted menu">
-    <div class="ui container">
-      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Study Buddy</h1></a>
+  <div class="ui top fixed borderless menu" id="head">
+    <img class="ui image feel" id="you-pic" src="/images/feels.png" alt="">
+    <a class="item" href="{{pathFor 'Home_Page'}}"><img class="ui floated left small image"
+                                                        src="/images/studbud.PNG"></a>
+    <div class="ui centered container">
+
       {{#if currentUser}}
-      <a class="{{ isActiveRoute 'Calendar_Page'}} item" href="{{ pathFor 'Calendar_Page' }}">Calendar</a>
-      <a class="{{ isActiveRoute 'My_Profile_Page'}} item" href="{{ pathFor 'My_Profile_Page' }}">My Profile</a>
-      <a class="{{ isActiveRoute 'Leaderboard_Page'}} item" href="{{ pathFor 'Leaderboard_Page' }}">Leaderboard</a>
-      <a class="{{ isActiveRoute 'Public_Chat_Page'}} item" href="{{ pathFor 'Public_Chat_Page' }}">Public Chat</a>
-      <a class="{{ isActiveRoute 'About_Us_Page'}} item" href="{{ pathFor 'About_Us_Page' }}">About Us</a>
-      <a class="{{ isActiveRoute 'Careers_Page'}} item" href="{{ pathFor 'Careers_Page' }}">Careers</a>
+      <a class="ui center {{ isActiveRoute 'Calendar_Page'}} item" href="{{ pathFor 'Calendar_Page' }}"><i
+          class="calendar icon"></i>Calendar</a>
+      <a class="{{ isActiveRoute 'My_Profile_Page'}} item" href="{{ pathFor 'My_Profile_Page' }}"><i
+          class="user icon"></i>My Profile</a>
+      <a class="{{ isActiveRoute 'Leaderboard_Page'}} item" href="{{ pathFor 'Leaderboard_Page' }}"><i
+          class="star icon"></i>Leaderboard</a>
+      <a class="{{ isActiveRoute 'Public_Chat_Page'}} item" href="{{ pathFor 'Public_Chat_Page' }}"><i
+          class="comment icon"></i>Public Chat
+        <div class="ui red label">22</div>
+      </a>
+      <a class="{{ isActiveRoute 'About_Us_Page'}} item" href="{{ pathFor 'About_Us_Page' }}"><i class="help icon"></i>About
+        Us</a>
+      <a class="{{ isActiveRoute 'Careers_Page'}} item" href="{{ pathFor 'Careers_Page' }}"><i
+          class="loading sun icon"></i>Careers</a>
       {{/if}}
       <a href="#" class="item">{{> loginButtons }} </a>
     </div>
