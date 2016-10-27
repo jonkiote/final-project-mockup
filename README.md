@@ -1,7 +1,7 @@
 # final-project-mockup
 Final Project ICS314f16(Mock)
 ##Mock Home Page
-![home](https://github.com/jonkiote/final-project-mockup/blob/master/doc/home.PNG?raw=tru "Home Page")
+![home](https://github.com/jonkiote/final-project-mockup/blob/master/doc/home.PNG?raw=tru ";^D")
 ##Mock Calendar Page (imported from google calendar)
 ![cal](https://github.com/jonkiote/final-project-mockup/blob/master/doc/cal.PNG?raw=tru "Calendar Page")
 ##Mock User Profile Page
